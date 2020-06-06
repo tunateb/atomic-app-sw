@@ -9,6 +9,8 @@ const FilmsPage = () => {
       titleKey="title"
       textKey="opening_crawl"
       name="Film"
+      linkText="Click for Details"
+      linkPath = "filmdetails"
     />
   );
 };

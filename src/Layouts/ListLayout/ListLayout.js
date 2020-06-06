@@ -17,8 +17,8 @@ class ListLayout extends React.Component {
     const response = await fetch(`${baseUrl}/${this.props.url}`);
 
     const data = await response.json();
-
     this.setState({ list: data.results });
+    
   };
 
   render() {
@@ -32,6 +32,8 @@ class ListLayout extends React.Component {
               onButtonClick={() => alert(`I like ${item[this.props.titleKey]}`)}
               imgSrc={`https://unsplash.it/300/30${index}`}
               key={item[this.props.titleKey]}
+              linkText={this.props.linkText}
+              linkPath = {this.props.linkPath}
             />
           ))}
         </div>

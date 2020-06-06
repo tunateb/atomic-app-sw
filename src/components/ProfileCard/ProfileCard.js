@@ -2,9 +2,9 @@ import React from "react";
 import "./ProfileCard.css";
 
 import Card from "../Card/Card";
-import Button from "../Button/Button";
 import Text from "../Text/Text";
 import Image from "../Image/Image";
+import BtnLink from "../BtnLink/BtnLink";
 
 const ProfileCard = ({
   title,
@@ -14,6 +14,8 @@ const ProfileCard = ({
   imgSrc,
   imgAlt,
   children,
+  linkPath,
+  linkText
 }) => {
   return (
     <Card rounded shadow>
@@ -37,9 +39,7 @@ const ProfileCard = ({
       )}
 
       <div className="card-actions">
-        <Button onClick={onButtonClick} color="red">
-          {buttonText}
-        </Button>
+       <BtnLink linkPath = {linkPath} linkText = {linkText} />
       </div>
     </Card>
   );
