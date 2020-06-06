@@ -1,0 +1,10 @@
+
+
+.card.card-shadow {
+  box-shadow: 0 3px 5px 1px #333;
+}
+
+.card.card-rounded {
+  border-radius: 4px;
+  overflow: hidden;
+}

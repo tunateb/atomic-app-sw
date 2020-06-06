@@ -1,0 +1,9 @@
+.card-content {
+    padding: 20px 0px;
+    height: 150px;
+    overflow: auto;
+}
+
+.card-img {
+    height: 300px;
+}
